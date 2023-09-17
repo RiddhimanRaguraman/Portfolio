@@ -26,6 +26,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build # Adjust if your build output directory is different
+          publish_dir: build # Adjust if yo  ur build output directory is different
       
 
