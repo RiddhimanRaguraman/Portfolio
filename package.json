@@ -4,9 +4,9 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "description": "An exploration of smooth panel scroll effects based on Margot Priolet's website.",
   "scripts": {
-    "start": "parcel src/index4.html --open",
+    "start": "parcel src/index4.html",
     "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
+    "build:parcel": "parcel build src/index4.html --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
   "repository": {
