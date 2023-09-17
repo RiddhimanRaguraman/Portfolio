@@ -1,43 +1,29 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Node.js Package
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main 
-  release:
-    types: [created]
+      - main # Change to the branch you want to deploy from
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
-
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://npm.pkg.github.com/
-      - run: |
-          sed -i '5i\ "homepage": "/portfolio",' ./package.json
-      - run: npm ci
-      - run: npm run build
-      - run: cp build/index.html
+      - name: Checkout code
+        uses: actions/checkout@v2
       
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16 # Change to your desired Node.js version
+      
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build # Adjust the build script as needed
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build # Adjust if your build output directory is different
