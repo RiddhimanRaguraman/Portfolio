@@ -33,7 +33,11 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - run: |
+          sed -i '5i\ "homepage": "/portfolio",' ./package.json
       - run: npm ci
-      - run: npm publish
+      - run: npm run build
+      - run: cp build/index.html
+      
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
