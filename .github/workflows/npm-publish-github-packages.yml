@@ -23,7 +23,7 @@ jobs:
           npm run build # Adjust the build script as needed
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: build # Adjust if your build output directory is different
