@@ -289,6 +289,7 @@ a:focus-visible {
 	-moz-font-feature-settings: "swsh";
 	-webkit-font-feature-settings: "swsh";
 	font-feature-settings: "swsh";
+	color: var(--color-text-alt);
 }
 
 .section__title--medium {
@@ -298,6 +299,8 @@ a:focus-visible {
 .section__text {
 	margin: 0;
 	max-width: 580px;
+	text-align: justify;
+    text-align-last: center;
 }
 
 .section__text--alt {
@@ -424,12 +427,13 @@ a:focus-visible {
     font-family: kudryashev-d-excontrast-sans, sans-serif;
     font-weight: 300;
     font-size: clamp(1.5rem,12vw,12rem);
-	margin: 25vh 0 2vh;
+	margin: 0vh 0 2vh;
     line-height: 0.9;
     text-transform: none;
     -moz-font-feature-settings: "swsh";
     -webkit-font-feature-settings: "swsh";
     font-feature-settings: "swsh";
+	color: var(--color-text-alt);
 }
 
 .project__title--medium {
@@ -439,6 +443,8 @@ a:focus-visible {
 .project__text {
     margin: 0;
     max-width: 580px;
+	font-weight: 150;
+	font-size: clamp(0.250rem, 2vw, 2rem);
 	text-align: justify;
     text-align-last: center;
 }
