@@ -147,40 +147,22 @@ a:focus-visible {
 
 .frame {
   color: var(--color-title);
-  grid-gap: 1rem;
   z-index: 100;
-  grid-template-columns: auto auto;
-  grid-template-areas: "title prev"
-                       "nav nav"
-                       "sponsor sponsor";
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1.2;
-  display: grid;
+  display: flex;
   position: absolute;
 }
 
-.frame a:not(.frame__title-back), .row + p a {
-  white-space: nowrap;
-  position: relative;
-  overflow: hidden;
-}
-
-.frame a:not(.frame__title-back):before, .row + p a:before {
-  content: "";
-  transform-origin: 0%;
-  background: currentColor;
+.frame__header-container {
+  justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
-  height: 1px;
-  transition: transform .3s;
-  position: absolute;
-  top: 90%;
-}
-
-.frame a:not(.frame__title-back):hover:before, .row + p a:hover:before {
-  transform-origin: 100%;
-  transform: scaleX(0);
+  display: flex;
 }
 
 .frame__title {
@@ -195,17 +177,17 @@ a:focus-visible {
   font-weight: normal;
 }
 
-.frame__title-back {
-  align-items: flex-end;
+.frame__title-back-right {
+  justify-content: center;
+  align-items: center;
   display: flex;
-  position: relative;
 }
 
-.frame__title-back span {
+.frame__title-back-right span {
   display: none;
 }
 
-.frame__title-back svg {
+.frame__title-back-right svg {
   fill: currentColor;
 }
 
@@ -232,6 +214,28 @@ a:focus-visible {
 
 .frame__demos-item {
   grid-row: 2;
+}
+
+.frame a:not(.frame__title-back), .row + p a {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame a:not(.frame__title-back):before, .row + p a:before {
+  content: "";
+  transform-origin: 0%;
+  background: currentColor;
+  width: 100%;
+  height: 1px;
+  transition: transform .3s;
+  position: absolute;
+  top: 90%;
+}
+
+.frame a:not(.frame__title-back):hover:before, .row + p a:hover:before {
+  transform-origin: 100%;
+  transform: scaleX(0);
 }
 
 .section {
@@ -273,7 +277,7 @@ a:focus-visible {
 }
 
 .section__text {
-  max-width: 400px;
+  max-width: 580px;
   margin: 0;
 }
 
@@ -371,6 +375,180 @@ a:focus-visible {
   color: var(--color-text-alt);
 }
 
+.project {
+  z-index: 4;
+  background: var(--color-bg);
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1;
+  position: static;
+  top: 0;
+}
+
+.project--intro {
+  text-align: center;
+  cursor: default;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 250vh;
+  padding: 8rem 0 2rem;
+  display: flex;
+}
+
+.project__title {
+  text-transform: none;
+  -moz-font-feature-settings: "swsh";
+  -webkit-font-feature-settings: "swsh";
+  font-feature-settings: "swsh";
+  margin: 25vh 0 2vh;
+  font-family: kudryashev-d-excontrast-sans, sans-serif;
+  font-size: clamp(1.5rem, 12vw, 12rem);
+  font-weight: 300;
+  line-height: .9;
+}
+
+.project__title--medium {
+  font-size: clamp(1.5rem, 12vw, 9rem);
+}
+
+.project__text {
+  text-align: justify;
+  text-align-last: center;
+  max-width: 580px;
+  margin: 0;
+}
+
+.project__text--alt {
+  color: var(--color-text-alt);
+  margin-top: auto;
+}
+
+.project__arrow {
+  fill: currentColor;
+  transform: translateY(3px)rotate(135deg);
+}
+
+.project--columns {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+}
+
+.project__header {
+  border-bottom: 1px solid #000;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 4vh 8vw;
+  display: flex;
+}
+
+.project__year {
+  color: var(--color-text-alt);
+}
+
+.custom-project {
+  z-index: 4;
+  background: var(--color-bg);
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1;
+  position: static;
+  top: 0;
+}
+
+.custom-project--intro {
+  text-align: center;
+  cursor: default;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 250vh;
+  padding: 8rem 0 2rem;
+  display: flex;
+}
+
+.custom-project__title {
+  text-transform: none;
+  -moz-font-feature-settings: "swsh";
+  -webkit-font-feature-settings: "swsh";
+  font-feature-settings: "swsh";
+  margin: 10vh 0 2vh;
+  font-family: kudryashev-d-excontrast-sans, sans-serif;
+  font-size: clamp(1rem, 8vw, 6rem);
+  font-weight: 300;
+  line-height: .9;
+}
+
+.custom-project__title--medium {
+  font-size: clamp(1rem, 8vw, 4.5rem);
+}
+
+.custom-project__text {
+  text-align: justify;
+  text-align-last: center;
+  max-width: 580px;
+  margin: auto;
+}
+
+.custom-project__text--alt {
+  color: var(--color-text-alt);
+  margin-top: auto;
+}
+
+.custom-project__arrow {
+  fill: currentColor;
+  transform: translateY(3px)rotate(135deg);
+}
+
+.custom-project--columns {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+}
+
+.custom-project__header {
+  border-bottom: 1px solid #000;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 4vh 8vw;
+  display: flex;
+}
+
+.custom-project__year {
+  color: var(--color-text-alt);
+}
+
+.centered-grid {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.image-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  display: grid;
+}
+
+.image-grid-item {
+  object-fit: cover;
+  border: 5px solid #000;
+  width: 100%;
+  height: auto;
+}
+
 .row {
   text-align: left;
   width: 100%;
@@ -429,6 +607,34 @@ a:focus-visible {
 
 .row + p {
   margin-top: 40vh;
+}
+
+.large-image {
+  text-align: center;
+  width: 100%;
+}
+
+.large-image .row__content-img {
+  aspect-ratio: 16 / 9;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.large-image:nth-child(2n) .row__content-img {
+  aspect-ratio: 1;
+  height: 200px;
+}
+
+.large-image:nth-child(4n) .row__content-img {
+  aspect-ratio: 1.5;
+  height: 200px;
+}
+
+.large-image:last-child .row__content-img {
+  aspect-ratio: 2.75;
+  height: 200px;
 }
 
 @media screen and (width >= 53em) {
