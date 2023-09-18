@@ -23,9 +23,14 @@ jobs:
           npm run build:parcel
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build # Adjust if yo ur build output directory is different
-      
+        run: |
+          git config user.name "Riddhiman Raguraman"
+          git config user.email "raguramanriddhiman@gmail.com"
+          git checkout --orphan gh-pages
+          git add .
+          git commit -m "GitHub Pages build $(date)"
+          git push origin gh-pages
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+    
 
