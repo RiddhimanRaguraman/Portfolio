@@ -11,14 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/codrops/ScrollPanels.git"
+    "url": "https://github.com/RiddhimanRaguraman/portfolio"
   },
   "keywords": [],
-  "author": "Codrops",
+  "author": "Riddhiman",
   "license": "MIT",
-  "homepage": "https://tympanus.net/codrops",
   "bugs": {
-    "url": "https://github.com/codrops/ScrollPanels/issues"
+    "url": "https://github.com/RiddhimanRaguraman/portfolio/issues"
   },
   "devDependencies": {
     "parcel": "^2.7.0"
