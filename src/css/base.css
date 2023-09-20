@@ -292,6 +292,19 @@ a:focus-visible {
 	color: var(--color-text-alt);
 }
 
+.section__title2 {
+	font-family: kudryashev-d-excontrast-sans, sans-serif;
+	font-weight: 300;
+	font-size: clamp(2rem,17vw,12.5rem);
+	margin: 15vh 0 6vh;
+	line-height: 0.9;
+	text-transform: none;
+	-moz-font-feature-settings: "swsh";
+	-webkit-font-feature-settings: "swsh";
+	font-feature-settings: "swsh";
+	color: var(--color-text-alt);
+}
+
 .section__title--medium {
 	font-size: clamp(1.5rem,12vw,9rem);
 }
@@ -399,6 +412,11 @@ a:focus-visible {
 
 .section__year {
 	color: var(--color-text-alt);
+}
+
+.section__year2 {
+	color: var(--color-text-alt);
+	margin: 13vh 0 6vh;
 }
 
 .project {
