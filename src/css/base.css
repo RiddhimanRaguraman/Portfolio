@@ -283,7 +283,7 @@ a:focus-visible {
 	font-family: kudryashev-d-excontrast-sans, sans-serif;
 	font-weight: 300;
 	font-size: clamp(2rem,17vw,12.5rem);
-	margin: 5vh 0 6vh;
+	margin: 0vh 0 6vh;
 	line-height: 0.9;
 	text-transform: none;
 	-moz-font-feature-settings: "swsh";
