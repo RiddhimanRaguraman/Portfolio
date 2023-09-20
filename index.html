@@ -9,8 +9,14 @@
 		<meta name="author" content="Riddhiman Raguraman" />
 		<link rel="stylesheet" href="https://use.typekit.net/lgy2swt.css">
 		<link rel="stylesheet" type="text/css" href="./src/css/base.css" />
-		<!-- <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-		 -->
+		<script>
+			document.documentElement.className="js";
+			var supportsCssVars=function(){
+				var e,t=document.createElement("style");
+				return t.innerHTML="root: { --tmp-var: bold; }", document.head.appendChild(t), e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e
+				};
+			supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+		</script>
 	</head>
 	<body class="demo-4 loading">
 		<main>
@@ -38,7 +44,11 @@
 				
 			</div>
 			<section class="section section--intro">
+				<header class="section__header">
+				<span class="section__year">~</span>
 				<h2 class="section__title">Riddhiman <br>Raguraman</h2>
+				<span class="section__year">~</span>
+				</header>
 				<p class="section__text">I am a passionate game developer who is also interested in artificial intelligence. you could say I have experience in web development, cause i developed this website. And, I write poems from time to time, check out my instagram for a taste </p>
 				<p class="section__text section__text--alt">
 					<span>Discover</span>
