@@ -666,7 +666,7 @@ a:focus-visible {
     grid-gap: 2rem;
     grid-template: "title prev nav sponsor sponsor"
     / 15% 15% 1fr 15% 15%;
-    justify-content: start;
+    justify-content: center;
     place-items: center start;
     padding: 2rem 3rem;
   }
