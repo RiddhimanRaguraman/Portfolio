@@ -542,7 +542,7 @@ a:focus-visible {
 
 .custom-project__text {
 	margin: auto;
-	max-width: 580px;
+	max-width: 750px;
 	text-align: justify;
 	text-align-last: center;
 }
