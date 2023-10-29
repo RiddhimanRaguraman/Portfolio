@@ -20,7 +20,7 @@
     "url": "https://github.com/RiddhimanRaguraman/portfolio/issues"
   },
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "parcel": "^2.10.1"
   },
   "dependencies": {
     "@studio-freight/lenis": "^0.2.9",
