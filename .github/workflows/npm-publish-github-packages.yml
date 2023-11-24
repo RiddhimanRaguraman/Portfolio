@@ -23,7 +23,7 @@ jobs:
           npm run build:parcel
       - name: Run JavaScript animations
         run: |
-          node js/index3.js
+          node src/js/index3.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
