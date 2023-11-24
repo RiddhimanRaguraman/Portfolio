@@ -20,11 +20,12 @@
     "url": "https://github.com/RiddhimanRaguraman/portfolio/issues"
   },
   "devDependencies": {
-    "parcel": "^2.10.1"
+    
   },
   "dependencies": {
     "@studio-freight/lenis": "^0.2.9",
     "gsap": "^3.11.3",
-    "imagesloaded": "^5.0.0"
+    "imagesloaded": "^5.0.0",
+    "parcel": "^2.10.1"
   }
 }
