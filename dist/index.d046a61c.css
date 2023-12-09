@@ -270,7 +270,7 @@ a:focus-visible {
   align-items: flex-start;
   margin: 0 0 6vh;
   font-family: kudryashev-d-excontrast-sans, sans-serif;
-  font-size: clamp(2rem, 1vw, 12.5rem);
+  font-size: clamp(2rem, 12vw, 12.5rem);
   font-weight: 300;
   line-height: .9;
   display: flex;
