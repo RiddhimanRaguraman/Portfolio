@@ -28,7 +28,7 @@ body {
 	text-transform: uppercase;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: acumin-pro, sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -548,13 +548,25 @@ a:focus-visible {
 
 .custom-project__text {
 	margin: auto;
-	max-width: 750px;
-	text-align: justify;
+	max-width: 1250px;
+	text-align: center;
 	text-align-last: center;
+	font-size: clamp(1rem, 1.5vw, 4.5rem);
+	/* display: flex;  
+    justify-content: center;   
+    align-items: flex-start;  */
+	line-height: 1.3;
 }
 
-.custom-project__text--alt {
-	margin-top: auto;
+.custom-project__textalt {
+	margin: auto;
+	max-width: 1250px;
+	text-align: left;
+	text-align-last: center;
+	font-size: clamp(1rem, 1.5vw, 4.5rem);
+	display: flex; /* Change to flex to center items horizontally */
+    justify-content: center; /* Add space between items */
+    align-items: flex-start; /* Align items to the bottom */
 	color: var(--color-text-alt);
 }
 
