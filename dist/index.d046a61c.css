@@ -290,7 +290,10 @@ a:focus-visible {
 }
 
 .section__title--medium {
-  font-size: clamp(1.5rem, 12vw, 9rem);
+  text-align: center;
+  text-align-last: center;
+  font-size: clamp(1.5rem, 10vw, 9rem);
+  line-height: 1.3;
 }
 
 .section__text {
@@ -521,7 +524,7 @@ a:focus-visible {
 }
 
 .custom-project__text {
-  text-align: center;
+  text-align: justify;
   text-align-last: center;
   max-width: 1250px;
   margin: auto;
@@ -529,15 +532,42 @@ a:focus-visible {
   line-height: 1.3;
 }
 
-.custom-project__textalt {
+.custom-project__text2 {
   text-align: left;
-  text-align-last: center;
-  color: var(--color-text-alt);
-  justify-content: center;
-  align-items: flex-start;
+  text-align-last: left;
+  max-width: 1250px;
+  margin: auto;
+  font-size: clamp(1rem, 1.75vw, 4.5rem);
+  line-height: 1.3;
+}
+
+.custom-project__textj {
+  text-align: justify;
+  text-align-last: justify;
   max-width: 1250px;
   margin: auto;
   font-size: clamp(1rem, 1.5vw, 4.5rem);
+  line-height: 1.3;
+}
+
+.custom-project__textl {
+  text-align: left;
+  text-align-last: left;
+  max-width: 1000px;
+  margin: auto;
+  font-size: clamp(1rem, 1.3vw, 4.5rem);
+  line-height: 1;
+}
+
+.custom-project__textalt {
+  text-align: left;
+  text-align-last: left;
+  color: var(--color-text-alt);
+  justify-content: left;
+  align-items: flex-start;
+  max-width: 1250px;
+  margin: auto;
+  font-size: clamp(1rem, 2.3vw, 4.5rem);
   display: flex;
 }
 
