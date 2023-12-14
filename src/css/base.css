@@ -315,6 +315,13 @@ a:focus-visible {
 	line-height: 1.3;
 }
 
+.section__title--medium2 {
+	text-align: center;
+	text-align-last: center;
+	font-size: clamp(1.5rem,9vw,9rem);
+	line-height: 1.3;
+}
+
 .section__text {
 	margin: 0;
 	max-width: 580px;
@@ -547,6 +554,26 @@ a:focus-visible {
 
 .custom-project__title--medium {
 	font-size: clamp(1rem, 8vw, 4.5rem);
+}
+
+.custom-project-spanner {
+	margin: auto;
+	max-width: 1250px;
+	text-align: justify;
+	font-size: clamp(1rem, 1.5vw, 4.5rem);
+	color: var(--color-text-alt);
+}
+
+.custom-project__titler {
+	margin: auto;
+	max-width: 1250px;
+	text-align: right;
+	font-size: clamp(1rem, 1vw, 4.5rem);
+}
+
+.custom-project_img-align {
+	margin: auto;
+	max-width: 1250px;
 }
 
 .custom-project__text {
