@@ -24,5 +24,12 @@
     "gsap": "^3.11.3",
     "imagesloaded": "^5.0.0",
     "parcel": "^2.10.3"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "^1.2.4"
   }
 }
