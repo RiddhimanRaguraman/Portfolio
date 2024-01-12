@@ -340,6 +340,15 @@ a:focus-visible {
     text-align-last: center;
 }
 
+.section__text2 {
+	margin: 0;
+	max-width: 580px;
+	display: flex; /* Change to flex to center items horizontally */
+    justify-content: center; /* Add space between items */
+    align-items: flex-start; /* Align items to the bottom */
+	font-size: clamp(0.5rem,1vw,2rem);
+}
+
 .section__text--alt {
 	margin-top: auto;
 	color: var(--color-text-alt);

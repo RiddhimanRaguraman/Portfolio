@@ -321,6 +321,15 @@ a:focus-visible {
   display: flex;
 }
 
+.section__text2 {
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 580px;
+  margin: 0;
+  font-size: clamp(.5rem, 1vw, 2rem);
+  display: flex;
+}
+
 .section__text--alt {
   color: var(--color-text-alt);
   margin-top: auto;
